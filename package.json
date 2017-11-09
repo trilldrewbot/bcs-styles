@@ -1,0 +1,32 @@
+{
+  "name": "bcs_styles",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "bundle-js": "./node_modules/.bin/webpack --config webpack.config.js",
+    "watch-js": "./node_modules/.bin/webpack --config webpack.config.js --progress --colors --watch",
+    "build-css": "node-sass-chokidar --include-path ./public/scss --include-path ./node_modules public/scss/ -o public/css/",
+    "watch-css": "npm run build-css && node-sass-chokidar --include-path ./public/scss --include-path ./node_modules public/scss/ -o public/css/ --watch --recursive",
+    "watch": "npm-run-all -p watch-js watch-css",
+    "build": "npm-run-all bundle-js build-css"
+  },
+  "author": "Drew Botka",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "devDependencies": {
+    "babel-core": "^5.8.25",
+    "babel-loader": "^5.3.2",
+    "es6-promise": "^3.0.2",
+    "node-sass-chokidar": "0.0.3",
+    "npm-run-all": "^4.1.2",
+    "tailwindcss": "^0.1.6",
+    "webpack": "^1.15.0"
+  },
+  "dependencies": {}
+}
