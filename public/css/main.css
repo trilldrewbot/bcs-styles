@@ -998,7 +998,13 @@ button {
 .btn-submit {
   background-color: #4A90E2;
   font-family: "Montserrat-SemiBold", helvetica, sans-serif;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  transition-property: background-color;
+  transition-duration: 400ms; }
+  .btn-submit:hover {
+    background-color: #306EB5; }
+  .btn-submit:focus {
+    background-color: #54A3FF; }
 
 .btn-small {
   padding: 0.3rem 1rem;

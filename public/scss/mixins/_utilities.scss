@@ -82,6 +82,14 @@
     background-color: $blue;
     font-family: $font-semi;
     text-transform: uppercase;
+    transition-property: background-color;
+    transition-duration: $animation-duration-standard;
+    &:hover {
+        background-color: $blue-dark;
+    }
+    &:focus {
+        background-color: $blue-light;
+    }
 }
 
 @mixin btn-small() {
