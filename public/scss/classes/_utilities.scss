@@ -22,6 +22,10 @@
     @include btn-secondary();
 }
 
+.btn-submit {
+    @include btn-submit();
+}
+
 .btn-small {
     @include btn-small();
 }

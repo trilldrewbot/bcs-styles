@@ -932,9 +932,7 @@ button {
 
 .btn-primary {
   background-color: #6E41BE;
-  color: #ffffff;
   border: none;
-  outline: none;
   cursor: pointer;
   transition-property: background-color;
   transition-duration: 400ms; }
@@ -957,6 +955,11 @@ button {
     color: #824CE0;
     border: 1px solid #824CE0; }
 
+.btn-submit {
+  background-color: #4A90E2;
+  font-family: "Montserrat-SemiBold", helvetica, sans-serif;
+  text-transform: uppercase; }
+
 .btn-small {
   padding: 0.3rem 1rem;
   border-radius: 4px; }
@@ -964,5 +967,3 @@ button {
 .btn-center {
   display: flex;
   margin: 0 auto 1rem auto; }
-  .btn-center:last-of-type {
-    margin-bottom: 0; }
