@@ -78,3 +78,29 @@
         border-bottom: 2px solid $link-color-focus;
     }
 }
+
+@mixin unordered() {
+    margin-left: $margin-4;
+    list-style: circle;
+}
+
+@mixin ordered() {
+    counter-reset: counter;
+    & > li {
+      position: relative;
+      margin-left: $margin-6;
+      &:before {
+        content: counter(counter);
+        counter-increment: counter;
+        position: absolute;
+        left: -$margin-6;
+        width: 1.8em;
+        height: 1.8em;
+        background-color: $primary-text-color;
+        border-radius: $rounded;
+        font-size: $fontsize-xs;
+        text-align: center;
+        color: $white;
+      }
+    }
+}
