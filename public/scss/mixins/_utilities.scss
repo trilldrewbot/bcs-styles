@@ -12,12 +12,12 @@
 
 @mixin card() {
     margin-bottom: $margin-3;
-    padding: $padding-4;
+    padding: $padding-3;
     background-color: $white;
     border: 1px solid $slate;
     border-radius: $primary-radius;
     @media #{$breakpoint-sm-up} {
-        margin-bottom: $margin-5;
+        margin-bottom: $margin-4;
         padding: $padding-4;
     }
     @media #{$breakpoint-md-up} {

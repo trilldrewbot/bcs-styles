@@ -1,3 +1,137 @@
+// Margins
+$margin-numbers: $margin-1, $margin-2, $margin-3, $margin-4, $margin-5, $margin-6;
+
+@for $i from 1 through 6 {
+  .margin-#{$i} {
+      margin: nth($margin-numbers, $i) !important;
+  }
+  .margin-t-#{$i} {
+      margin-top: nth($margin-numbers, $i) !important;
+  }
+  .margin-r-#{$i} {
+      margin-right: nth($margin-numbers, $i) !important;
+  }
+  .margin-b-#{$i} {
+      margin-bottom: nth($margin-numbers, $i) !important;
+  }
+  .margin-l-#{$i} {
+      margin-left: nth($margin-numbers, $i) !important;
+  }
+}
+
+// Mixin to run inside of for loop - creates margin/breakpoint classes * Not for developer use *
+@mixin margin-factory($thisPrefix) {
+  @for $i from 1 through 6 {
+    .margin-#{$i}-#{$thisPrefix} {
+        margin: nth($margin-numbers, $i) !important;
+    }
+    .margin-t-#{$i}-#{$thisPrefix} {
+        margin-top: nth($margin-numbers, $i) !important;
+    }
+    .margin-r-#{$i}-#{$thisPrefix} {
+        margin-right: nth($margin-numbers, $i) !important;
+    }
+    .margin-b-#{$i}-#{$thisPrefix} {
+        margin-bottom: nth($margin-numbers, $i) !important;
+    }
+    .margin-l-#{$i}-#{$thisPrefix} {
+        margin-left: nth($margin-numbers, $i) !important;
+    }
+  }
+} // Mixin to run inside of for loop - creates margin/breakpoint classes
+
+@for $i from 1 through length($breakpoint-up-prefixes) {
+  $thisPrefix: nth($breakpoint-up-prefixes, $i);
+  @if $thisPrefix == "xs" {
+    @include margin-factory($thisPrefix);
+  } @else if $thisPrefix == "sm" {
+    @media #{$breakpoint-sm-up} {
+      @include margin-factory($thisPrefix);
+    }
+  } @else if $thisPrefix == "md" {
+    @media #{$breakpoint-md-up} {
+      @include margin-factory($thisPrefix);
+    }
+  } @else if $thisPrefix == "lg" {
+    @media #{$breakpoint-lg-up} {
+      @include margin-factory($thisPrefix);
+    }
+  } @else if $thisPrefix == "xl" {
+    @media #{$breakpoint-xl-up} {
+      @include margin-factory($thisPrefix);
+    }
+  }
+}
+
+// Padding
+$padding-numbers: $padding-1, $padding-2, $padding-3, $padding-4, $padding-5, $padding-6;
+
+@for $i from 1 through 6 {
+  .padding-#{$i} {
+      padding: nth($padding-numbers, $i) !important;
+  }
+  .padding-t-#{$i} {
+      padding-top: nth($padding-numbers, $i) !important;
+  }
+  .padding-r-#{$i} {
+      padding-right: nth($padding-numbers, $i) !important;
+  }
+  .padding-b-#{$i} {
+      padding-bottom: nth($padding-numbers, $i) !important;
+  }
+  .padding-l-#{$i} {
+      padding-left: nth($padding-numbers, $i) !important;
+  }
+}
+
+// Mixin to run inside of for loop - creates padding/breakpoint classes * Not for developer use *
+@mixin padding-factory($thisPrefix) {
+  @for $i from 1 through 6 {
+    .padding-#{$i} {
+        padding: nth($padding-numbers, $i) !important;
+    }
+    .padding-#{$i}-#{$thisPrefix} {
+        padding: nth($padding-numbers, $i) !important;
+    }
+    .padding-t-#{$i}-#{$thisPrefix} {
+        padding-top: nth($padding-numbers, $i) !important;
+    }
+    .padding-r-#{$i}-#{$thisPrefix} {
+        padding-right: nth($padding-numbers, $i) !important;
+    }
+    .padding-b-#{$i}-#{$thisPrefix} {
+        padding-bottom: nth($padding-numbers, $i) !important;
+    }
+    .padding-l-#{$i}-#{$thisPrefix} {
+        padding-left: nth($padding-numbers, $i) !important;
+    }
+  }
+} // Mixin to run inside of for loop - creates padding/breakpoint classes
+
+@for $i from 1 through length($breakpoint-up-prefixes) {
+  $thisPrefix: nth($breakpoint-up-prefixes, $i);
+  @if $thisPrefix == "xs" {
+    @include padding-factory($thisPrefix);
+  } @else if $thisPrefix == "sm" {
+    @media #{$breakpoint-sm-up} {
+      @include padding-factory($thisPrefix);
+    }
+  } @else if $thisPrefix == "md" {
+    @media #{$breakpoint-md-up} {
+      @include padding-factory($thisPrefix);
+    }
+  } @else if $thisPrefix == "lg" {
+    @media #{$breakpoint-lg-up} {
+      @include padding-factory($thisPrefix);
+    }
+  } @else if $thisPrefix == "xl" {
+    @media #{$breakpoint-xl-up} {
+      @include padding-factory($thisPrefix);
+    }
+  }
+}
+
+// Containers
 .section {
     @include section()
 }
@@ -6,10 +140,12 @@
     @include card();
 }
 
+// Dividers
 .divide-horizontal {
     @include divide-horizontal();
 }
 
+// Buttons
 .btn {
     @include btn();
 }

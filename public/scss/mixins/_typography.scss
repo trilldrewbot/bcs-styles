@@ -13,6 +13,7 @@
 }
 
 @mixin headline($color: "inherit") {
+    margin-bottom: $margin-3;
     display: block;
     font-family: $font-exbold;
     font-size: $fontsize-lg;
@@ -30,6 +31,7 @@
 }
 
 @mixin headline-two($color: "inherit") {
+    margin-bottom: $margin-3;
     display: block;
     font-family: $font-semi;
     font-size: $fontsize-base;
@@ -47,6 +49,7 @@
 }
 
 @mixin title($color: "inherit") {
+    margin-bottom: $margin-3;
     display: block;
     font-family: $font-light;
     font-size: $fontsize-sm;
@@ -80,7 +83,7 @@
 }
 
 @mixin bulleted() {
-    margin-left: $margin-4;
+    margin: 0 0 $margin-3 $margin-4;
     list-style: circle;
 }
 
@@ -88,7 +91,7 @@
     counter-reset: counter;
     & > li {
       position: relative;
-      margin-left: $margin-6;
+      margin: 0 0 $margin-1 $margin-6;
       &:before {
         content: counter(counter);
         counter-increment: counter;
