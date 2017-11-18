@@ -1,0 +1,80 @@
+@mixin base-text($color: "inherit") {
+    font-size: $fontsize-xs;
+    line-height: $line-height;
+    @media #{$breakpoint-sm-up} {
+        font-size: $fontsize-sm;
+    }
+    @media #{$breakpoint-md-up} {
+        font-size: $fontsize-sm;
+    }
+    @media #{$breakpoint-lg-up} {
+        font-size: $fontsize-base;
+    }
+}
+
+@mixin headline($color: "inherit") {
+    display: block;
+    font-family: $font-exbold;
+    font-size: $fontsize-lg;
+    color: $color;
+    line-height: $line-height;
+    @media #{$breakpoint-sm-up} {
+        font-size: $fontsize-xl;
+    }
+    @media #{$breakpoint-md-up} {
+        font-size: $fontsize-xl;
+    }
+    @media #{$breakpoint-lg-up} {
+        font-size: $fontsize-2xl;
+    }
+}
+
+@mixin headline-two($color: "inherit") {
+    display: block;
+    font-family: $font-semi;
+    font-size: $fontsize-base;
+    color: $color;
+    line-height: $line-height;
+    @media #{$breakpoint-sm-up} {
+        font-size: $fontsize-lg;
+    }
+    @media #{$breakpoint-md-up} {
+        font-size: $fontsize-lg;
+    }
+    @media #{$breakpoint-lg-up} {
+        font-size: $fontsize-xl;
+    }
+}
+
+@mixin title($color: "inherit") {
+    display: block;
+    font-family: $font-light;
+    font-size: $fontsize-sm;
+    color: $color;
+    line-height: $line-height;
+    text-transform: uppercase;
+    @media #{$breakpoint-sm-up} {
+        font-size: $fontsize-base;
+    }
+    @media #{$breakpoint-md-up} {
+        font-size: $fontsize-base;
+    }
+    @media #{$breakpoint-lg-up} {
+        font-size: $fontsize-lg;
+    }
+}
+
+@mixin inline-link() {
+    color: $purple;
+    text-decoration: none;
+    border-bottom: 2px solid $link-color;
+    transition: all $animation-duration-standard ease-out;
+    &:hover {
+        color: $link-color-hover;
+        border-bottom: 2px solid $link-color-hover;
+    }
+    &:focus {
+        color: $link-color-focus;
+        border-bottom: 2px solid $link-color-focus;
+    }
+}

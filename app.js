@@ -11,5 +11,5 @@ app.use(express.static(publicPath));
 
 const server = app.listen(app.get('port'), function() {
   let port = server.address().port;
-  console.log('Magic happens on port ' + port);
+  console.log('BCS Styles is currently being served to port ' + port);
 });

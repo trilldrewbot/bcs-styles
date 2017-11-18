@@ -1,3 +1,8 @@
-h1 {
-    color: #BADA55;
-}
+@import 'staging';
+@import "grid/main.scss";
+@import 'variables/main.scss';
+@import 'mixins/main.scss';
+@import 'elements';
+@import 'components/main.scss';
+@import 'classes/_typography.scss';
+@import 'classes/_utilities.scss';

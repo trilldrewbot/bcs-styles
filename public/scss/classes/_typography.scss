@@ -1,0 +1,35 @@
+.base-text {
+    @include base-text();
+}
+
+.base-text-bold {
+    font-family: $font-semi;
+}
+
+.base-text-italic {
+    font-family: $font-reg-italic;
+}
+
+.error {
+    color: $error-color;
+}
+
+.success {
+    color: $success-color;
+}
+
+.headline {
+    @include headline();
+}
+
+.headline-two {
+    @include headline-two();
+}
+
+.title {
+    @include title();
+}
+
+.inline-link {
+    @include inline-link();
+}

@@ -1,0 +1,91 @@
+// Font Names
+$mont-light: "Montserrat-Light";
+$mont-light-italic: "Montserrat-LightItalic";
+$mont-reg: "Montserrat-Regular";
+$mont-reg-italic: "Montserrat-Italic";
+$mont-semi: "Montserrat-SemiBold";
+$mont-semi-italic: "Montserrat-SemiBoldItalic";
+$mont-exbold: "Montserrat-ExtraBold";
+$mont-exbold-italic: "Montserrat-ExtraBoldItalic";
+
+// Font Faces
+@font-face {
+    font-family: $mont-light;
+    src: url(../../assets/fonts/montserrat/Montserrat-Light.ttf);
+}
+
+@font-face {
+    font-family: $mont-light-italic;
+    src: url(../../assets/fonts/montserrat/Montserrat-LightItalic.ttf);
+}
+
+@font-face {
+    font-family: $mont-reg;
+    src: url(../../assets/fonts/montserrat/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: $mont-reg-italic;
+    src: url(../../assets/fonts/montserrat/Montserrat-Italic.ttf);
+}
+
+@font-face {
+    font-family: $mont-semi;
+    src: url(../../assets/fonts/montserrat/Montserrat-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: $mont-semi-italic;
+    src: url(../../assets/fonts/montserrat/Montserrat-SemiBoldItalic.ttf);
+}
+
+@font-face {
+    font-family: $mont-exbold;
+    src: url(../../assets/fonts/montserrat/Montserrat-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: $mont-exbold-italic;
+    src: url(../../assets/fonts/montserrat/Montserrat-ExtraBoldItalic.ttf);
+}
+
+// Montserrat Font stacks
+$mont-light-stack: $mont-light, helvetica, sans-serif;
+$mont-light-italic-stack: $mont-light-italic, helvetica, sans-serif;
+$mont-reg-stack: $mont-reg, helvetica, sans-serif;
+$mont-reg-italic-stack: $mont-reg-italic, helvetica, sans-serif;
+$mont-semi-stack: $mont-semi, helvetica, sans-serif;
+$mont-semi-italic-stack: $mont-semi-italic, helvetica, sans-serif;
+$mont-exbold-stack: $mont-exbold, helvetica, sans-serif;
+$mont-exbold-italic-stack: $mont-exbold-italic, helvetica, sans-serif;
+
+// Font Stacks
+$font-light: $mont-light-stack;
+$font-light-italic: $mont-light-italic-stack;
+$font-reg: $mont-reg-stack;
+$font-reg-italic: $mont-reg-italic-stack;
+$font-semi: $mont-semi-stack;
+$font-semi-italic: $mont-semi-italic-stack;
+$font-exbold: $mont-exbold-stack;
+$font-exbold-italic: $mont-exbold-italic-stack;
+
+// Font weights
+$fontweight-light: 300;
+$fontweight-regular: 400;
+$fontweight-semi-bold: 600;
+$fontweight-extra-bold: 800;
+
+// Text sizes
+$fontsize-xs: 1.2rem;
+$fontsize-sm: 1.4rem;
+$fontsize-base: 1.6rem;
+$fontsize-lg: 1.8rem;
+$fontsize-xl: 2.4rem;
+$fontsize-2xl: 3.0rem;
+
+// Line height
+$line-height: 1.6em;
+
+// Text colors:
+$primary-text-color: $grey;
+$secondary-text-color: $grey-light;

@@ -1,0 +1,107 @@
+@mixin section() {
+    padding: $padding-4;
+    display: block;
+    background-color: $slate-light;
+    @media #{$breakpoint-sm-up} {
+        padding: $padding-5;
+    }
+    @media #{$breakpoint-md-up} {
+        padding: $padding-6;
+    }
+}
+
+@mixin card() {
+    margin-bottom: $margin-3;
+    padding: $padding-4;
+    background-color: $white;
+    border: 1px solid $slate;
+    border-radius: $primary-radius;
+    @media #{$breakpoint-sm-up} {
+        margin-bottom: $margin-5;
+        padding: $padding-4;
+    }
+    @media #{$breakpoint-md-up} {
+        margin-bottom: $margin-5;
+        padding: $padding-5;
+    }
+}
+
+@mixin divide-horizontal() {
+    margin: 0 0 $margin-3 0;
+    width: 100%;
+    height: 1px;
+    background-color: $grey-light;
+    border: none;
+}
+
+@mixin btn() {
+    display: inline-block;
+    margin: 0 $margin-3 $margin-3 0;
+    padding: $padding-2 $padding-4;
+    width: fit-content;
+    background-color: $grey;
+    color: $white;
+    border: none;
+    border-radius: $primary-radius;
+    outline: none;
+    cursor: pointer;
+}
+
+@mixin btn-primary() {
+    background-color: $link-color;
+    color: $white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition-property: background-color;
+    transition-duration: $animation-duration-standard;
+    &:hover {
+        background-color: $link-color-hover;
+    }
+    &:focus {
+        background-color: $link-color-focus;
+    }
+}
+
+@mixin btn-secondary() {
+    background-color: inherit;
+    color: $link-color;
+    border: 1px solid $link-color;
+    outline: none;
+    cursor: pointer;
+    transition: all $animation-duration-standard ease-out;
+    &:hover {
+        color: $link-color-hover;
+        border: 1px solid $link-color-hover;
+    }
+    &:focus {
+        color: $link-color-focus;
+        border: 1px solid $link-color-focus;
+    }
+}
+
+@mixin btn-small() {
+    padding: $padding-1 $padding-3;
+    border-radius: $secondary-radius;
+}
+
+@mixin btn-center() {
+    display: flex;
+    margin: 0 auto $margin-3 auto;
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
+@mixin image-overlay($url, $color: $slate-dark, $percent: "85%") {
+    background: $color url($url) 0 0 no-repeat fixed;
+    height: 100%;
+    overflow: hidden;
+    &:after {
+      content: "";
+      background-color: $color;
+      opacity: $percent;
+      width: 100%;
+      height: 100%;
+    }
+}

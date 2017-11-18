@@ -1,0 +1,65 @@
+body {
+    -webkit-font-smoothing: antialiased;
+    font: 10px $mont-reg-stack;
+    color: $primary-text-color;
+}
+
+p,
+li,
+span,
+button,
+input,
+textarea,
+figcaption,
+div,
+section,
+p a {
+    @include base-text();
+}
+
+p,
+li,
+input,
+figcaption {
+    margin-bottom: $margin-3;
+}
+
+b, strong {
+    font-family: $font-semi;
+}
+
+em {
+    font-family: $font-reg-italic;
+}
+
+h1 {
+    @include headline();
+}
+
+h2 {
+    @include headline-two();
+}
+
+h3 {
+    @include title();
+}
+
+p a {
+    @include inline-link();
+}
+
+p span {
+    color: $secondary-text-color;
+}
+
+section {
+    @include section();
+}
+
+hr {
+    @include divide-horizontal();
+}
+
+button {
+    @include btn();
+}
