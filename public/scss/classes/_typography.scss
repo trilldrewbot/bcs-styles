@@ -34,8 +34,8 @@
     @include inline-link();
 }
 
-.unordered {
-    @include unordered();
+.bulleted {
+    @include bulleted();
 }
 
 .ordered {

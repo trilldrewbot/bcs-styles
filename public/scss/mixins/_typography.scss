@@ -79,7 +79,7 @@
     }
 }
 
-@mixin unordered() {
+@mixin bulleted() {
     margin-left: $margin-4;
     list-style: circle;
 }

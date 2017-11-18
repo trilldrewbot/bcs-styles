@@ -769,6 +769,24 @@ p a, li a {
 p span {
   color: #9B9B9B; }
 
+ol {
+  counter-reset: counter; }
+  ol > li {
+    position: relative;
+    margin-left: 3rem; }
+    ol > li:before {
+      content: counter(counter);
+      counter-increment: counter;
+      position: absolute;
+      left: -3rem;
+      width: 1.8em;
+      height: 1.8em;
+      background-color: #4A4A4A;
+      border-radius: 100%;
+      font-size: 1.2rem;
+      text-align: center;
+      color: #ffffff; }
+
 section {
   padding: 1.5rem;
   display: block;
@@ -885,7 +903,7 @@ button {
     color: #824CE0;
     border-bottom: 2px solid #824CE0; }
 
-.unordered {
+.bulleted {
   margin-left: 1.5rem;
   list-style: circle; }
 
