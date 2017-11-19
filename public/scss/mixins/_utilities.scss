@@ -127,6 +127,9 @@
         left: 45%;
         animation: spin 2s infinite linear;
     }
+    &:focus {
+        color: transparent;
+    }
     &.btn-secondary {
         color: transparent;
         &:before {
@@ -154,14 +157,18 @@
     }
 }
 
-@mixin text-input() {
-    font-size: $fontsize-sm;
+@mixin input-text() {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-size: $fontsize-xs;
     line-height: $line-height;
-    padding-left: $padding-2;
+    padding: $padding-1 $padding-2;
     width: 100%;
     outline: none;
     border: 1px solid $secondary-text-color;
     border-radius: $secondary-radius;
+    background-color: $white;
     color: $secondary-text-color;
     transition: all $animation-duration-standard ease-out;
     &::placeholder {
@@ -171,7 +178,29 @@
         border-color: $blue;
         color: $primary-text-color;
     }
+    @media #{$breakpoint-sm-up} {
+        font-size: $fontsize-sm;
+    }
     @media #{$breakpoint-md-up} {
-        width: 50%;
+        font-size: $fontsize-sm;
+    }
+    @media #{$breakpoint-lg-up} {
+        font-size: $fontsize-base;
+    }
+}
+
+@mixin input-search() {
+    background: url(../../assets/images/magnifying-glass.svg) no-repeat scroll $fontsize-base $fontsize-base;
+    background-position: right $padding-2 top $padding-2;
+    &:focus {
+        background-image: url(../../assets/images/magnifying-glass-active.svg);
+    }
+}
+
+@mixin select() {
+    background: url(../../assets/images/chevron-down.svg) no-repeat scroll $fontsize-base $fontsize-base;
+    background-position: right $padding-2 top $padding-3;
+    &:focus {
+        background-image: url(../../assets/images/chevron-down-active.svg);
     }
 }

@@ -48,10 +48,10 @@
     }
 }
 
-@mixin title($color: "inherit") {
+@mixin headline-three($color: "inherit") {
     margin-bottom: $margin-3;
     display: block;
-    font-family: $font-light;
+    font-family: $font-med;
     font-size: $fontsize-sm;
     color: $color;
     line-height: $line-height;
@@ -63,6 +63,25 @@
     }
     @media #{$breakpoint-lg-up} {
         font-size: $fontsize-lg;
+    }
+}
+
+@mixin title($color: "inherit") {
+    margin-bottom: $margin-3;
+    display: block;
+    font-family: $font-light;
+    font-size: $fontsize-xs;
+    color: $color;
+    line-height: $line-height;
+    text-transform: uppercase;
+    @media #{$breakpoint-sm-up} {
+        font-size: $fontsize-sm;
+    }
+    @media #{$breakpoint-md-up} {
+        font-size: $fontsize-sm;
+    }
+    @media #{$breakpoint-lg-up} {
+        font-size: $fontsize-base;
     }
 }
 

@@ -630,6 +630,14 @@ html {
   src: url(../../assets/fonts/montserrat/Montserrat-Italic.ttf); }
 
 @font-face {
+  font-family: "Montserrat-Medium";
+  src: url(../../assets/fonts/montserrat/Montserrat-Medium.ttf); }
+
+@font-face {
+  font-family: "Montserrat-MediumItalic";
+  src: url(../../assets/fonts/montserrat/Montserrat-MediumItalic.ttf); }
+
+@font-face {
   font-family: "Montserrat-SemiBold";
   src: url(../../assets/fonts/montserrat/Montserrat-SemiBold.ttf); }
 
@@ -660,7 +668,7 @@ figcaption,
 div,
 section,
 p a {
-  font-size: 1.2rem;
+  font-size: 1rem;
   line-height: 1.6em; }
   @media only screen and (min-width: 641px) {
     p,
@@ -673,7 +681,7 @@ p a {
     div,
     section,
     p a {
-      font-size: 1.4rem; } }
+      font-size: 1.2rem; } }
   @media only screen and (min-width: 1025px) {
     p,
     li,
@@ -685,7 +693,7 @@ p a {
     div,
     section,
     p a {
-      font-size: 1.4rem; } }
+      font-size: 1.2rem; } }
   @media only screen and (min-width: 1441px) {
     p,
     li,
@@ -697,14 +705,15 @@ p a {
     div,
     section,
     p a {
-      font-size: 1.6rem; } }
+      font-size: 1.4rem; } }
 
 p,
 figcaption,
 ol,
 input,
-textarea {
-  margin-bottom: 1rem; }
+textarea,
+select {
+  margin-bottom: 1.25rem; }
 
 b, strong {
   font-family: "Montserrat-SemiBold", helvetica, sans-serif; }
@@ -713,7 +722,7 @@ em {
   font-family: "Montserrat-Italic", helvetica, sans-serif; }
 
 h1 {
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
   display: block;
   font-family: "Montserrat-ExtraBold", helvetica, sans-serif;
   font-size: 1.8rem;
@@ -730,10 +739,10 @@ h1 {
       font-size: 3rem; } }
 
 h2 {
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
   display: block;
   font-family: "Montserrat-SemiBold", helvetica, sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   color: "inherit";
   line-height: 1.6em; }
   @media only screen and (min-width: 641px) {
@@ -747,21 +756,39 @@ h2 {
       font-size: 2.4rem; } }
 
 h3 {
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
   display: block;
-  font-family: "Montserrat-Light", helvetica, sans-serif;
-  font-size: 1.4rem;
+  font-family: "Montserrat-Medium", helvetica, sans-serif;
+  font-size: 1.2rem;
   color: "inherit";
   line-height: 1.6em; }
   @media only screen and (min-width: 641px) {
     h3 {
-      font-size: 1.6rem; } }
+      font-size: 1.4rem; } }
   @media only screen and (min-width: 1025px) {
     h3 {
-      font-size: 1.6rem; } }
+      font-size: 1.4rem; } }
   @media only screen and (min-width: 1441px) {
     h3 {
       font-size: 1.8rem; } }
+
+h4 {
+  margin-bottom: 1.25rem;
+  display: block;
+  font-family: "Montserrat-Light", helvetica, sans-serif;
+  font-size: 1rem;
+  color: "inherit";
+  line-height: 1.6em;
+  text-transform: uppercase; }
+  @media only screen and (min-width: 641px) {
+    h4 {
+      font-size: 1.2rem; } }
+  @media only screen and (min-width: 1025px) {
+    h4 {
+      font-size: 1.2rem; } }
+  @media only screen and (min-width: 1441px) {
+    h4 {
+      font-size: 1.4rem; } }
 
 p a, li a {
   color: #6E41BE;
@@ -792,7 +819,7 @@ ol {
       height: 1.8em;
       background-color: #4A4A4A;
       border-radius: 100%;
-      font-size: 1.2rem;
+      font-size: 1rem;
       text-align: center;
       color: #ffffff; }
 
@@ -808,15 +835,49 @@ section {
       padding: 3rem; } }
 
 hr {
-  margin: 0 0 1rem 0;
+  margin: 0 0 1.25rem 0;
   width: 100%;
   height: 1px;
   background-color: #9B9B9B;
   border: none; }
 
+label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase; }
+
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-size: 1rem;
+  line-height: 1.6em;
+  padding: 0.3rem 0.75rem;
+  width: 100%;
+  outline: none;
+  border: 1px solid #9B9B9B;
+  border-radius: 4px;
+  background-color: #ffffff;
+  color: #9B9B9B;
+  transition: all 250ms ease-out; }
+  input::placeholder {
+    color: #9B9B9B; }
+  input:focus {
+    border-color: #4A90E2;
+    color: #4A4A4A; }
+  @media only screen and (min-width: 641px) {
+    input {
+      font-size: 1.2rem; } }
+  @media only screen and (min-width: 1025px) {
+    input {
+      font-size: 1.2rem; } }
+  @media only screen and (min-width: 1441px) {
+    input {
+      font-size: 1.4rem; } }
+
 input[type="submit"] {
   display: inline-block;
-  margin: 0 1rem 1rem 0;
+  margin: 0 1.25rem 1.25rem 0;
   padding: 0.75rem 1.5rem;
   width: fit-content;
   background-color: #4A4A4A;
@@ -846,33 +907,18 @@ input[type="submit"] {
     border: none;
     color: #ffffff; }
 
-input {
-  font-size: 1.4rem;
-  line-height: 1.6em;
-  padding-left: 0.75rem;
-  width: 100%;
-  outline: none;
-  border: 1px solid #9B9B9B;
-  border-radius: 4px;
-  color: #9B9B9B;
-  transition: all 250ms ease-out; }
-  input::placeholder {
-    color: #9B9B9B; }
-  input:focus {
-    border-color: #4A90E2;
-    color: #4A4A4A; }
-  @media only screen and (min-width: 1025px) {
-    input {
-      width: 50%; } }
-
 textarea {
-  font-size: 1.4rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-size: 1rem;
   line-height: 1.6em;
-  padding-left: 0.75rem;
+  padding: 0.3rem 0.75rem;
   width: 100%;
   outline: none;
   border: 1px solid #9B9B9B;
   border-radius: 4px;
+  background-color: #ffffff;
   color: #9B9B9B;
   transition: all 250ms ease-out; }
   textarea::placeholder {
@@ -880,35 +926,55 @@ textarea {
   textarea:focus {
     border-color: #4A90E2;
     color: #4A4A4A; }
+  @media only screen and (min-width: 641px) {
+    textarea {
+      font-size: 1.2rem; } }
   @media only screen and (min-width: 1025px) {
     textarea {
-      width: 50%; } }
+      font-size: 1.2rem; } }
+  @media only screen and (min-width: 1441px) {
+    textarea {
+      font-size: 1.4rem; } }
 
 select {
-  font-size: 1.4rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-size: 1rem;
   line-height: 1.6em;
-  padding-left: 0.75rem;
+  padding: 0.3rem 0.75rem;
   width: 100%;
   outline: none;
   border: 1px solid #9B9B9B;
   border-radius: 4px;
+  background-color: #ffffff;
   color: #9B9B9B;
-  transition: all 250ms ease-out; }
+  transition: all 250ms ease-out;
+  background: url(../../assets/images/chevron-down.svg) no-repeat scroll 1.4rem 1.4rem;
+  background-position: right 0.75rem top 1rem; }
   select::placeholder {
     color: #9B9B9B; }
   select:focus {
     border-color: #4A90E2;
     color: #4A4A4A; }
+  @media only screen and (min-width: 641px) {
+    select {
+      font-size: 1.2rem; } }
   @media only screen and (min-width: 1025px) {
     select {
-      width: 50%; } }
+      font-size: 1.2rem; } }
+  @media only screen and (min-width: 1441px) {
+    select {
+      font-size: 1.4rem; } }
+  select:focus {
+    background-image: url(../../assets/images/chevron-down-active.svg); }
 
 option {
   padding: 0.75rem; }
 
 button {
   display: inline-block;
-  margin: 0 1rem 1rem 0;
+  margin: 0 1.25rem 1.25rem 0;
   padding: 0.75rem 1.5rem;
   width: fit-content;
   background-color: #4A4A4A;
@@ -933,17 +999,17 @@ button {
     transform: rotate(360deg); } }
 
 .base-text {
-  font-size: 1.2rem;
+  font-size: 1rem;
   line-height: 1.6em; }
   @media only screen and (min-width: 641px) {
     .base-text {
-      font-size: 1.4rem; } }
+      font-size: 1.2rem; } }
   @media only screen and (min-width: 1025px) {
     .base-text {
-      font-size: 1.4rem; } }
+      font-size: 1.2rem; } }
   @media only screen and (min-width: 1441px) {
     .base-text {
-      font-size: 1.6rem; } }
+      font-size: 1.4rem; } }
 
 .base-text-bold {
   font-family: "Montserrat-SemiBold", helvetica, sans-serif; }
@@ -957,8 +1023,20 @@ button {
 .success {
   color: #417505; }
 
+.link {
+  color: #6E41BE;
+  text-decoration: none;
+  border-bottom: 2px solid #6E41BE;
+  transition: all 250ms ease-out; }
+  .link:hover {
+    color: #995EFF;
+    border-bottom: 2px solid #995EFF; }
+  .link:focus {
+    color: #482A7C;
+    border-bottom: 2px solid #482A7C; }
+
 .headline {
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
   display: block;
   font-family: "Montserrat-ExtraBold", helvetica, sans-serif;
   font-size: 1.8rem;
@@ -975,10 +1053,10 @@ button {
       font-size: 3rem; } }
 
 .headline-two {
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
   display: block;
   font-family: "Montserrat-SemiBold", helvetica, sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   color: "inherit";
   line-height: 1.6em; }
   @media only screen and (min-width: 641px) {
@@ -992,21 +1070,22 @@ button {
       font-size: 2.4rem; } }
 
 .title {
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
   display: block;
   font-family: "Montserrat-Light", helvetica, sans-serif;
-  font-size: 1.4rem;
+  font-size: 1rem;
   color: "inherit";
-  line-height: 1.6em; }
+  line-height: 1.6em;
+  text-transform: uppercase; }
   @media only screen and (min-width: 641px) {
     .title {
-      font-size: 1.6rem; } }
+      font-size: 1.2rem; } }
   @media only screen and (min-width: 1025px) {
     .title {
-      font-size: 1.6rem; } }
+      font-size: 1.2rem; } }
   @media only screen and (min-width: 1441px) {
     .title {
-      font-size: 1.8rem; } }
+      font-size: 1.4rem; } }
 
 .inline-link {
   color: #6E41BE;
@@ -1021,7 +1100,7 @@ button {
     border-bottom: 2px solid #482A7C; }
 
 .bulleted {
-  margin: 0 0 1rem 1.5rem;
+  margin: 0 0 1.25rem 1.5rem;
   list-style: circle; }
 
 .ordered {
@@ -1038,7 +1117,7 @@ button {
       height: 1.8em;
       background-color: #4A4A4A;
       border-radius: 100%;
-      font-size: 1.2rem;
+      font-size: 1rem;
       text-align: center;
       color: #ffffff; }
 
@@ -1073,19 +1152,19 @@ button {
   margin-left: 0.75rem !important; }
 
 .margin-3 {
-  margin: 1rem !important; }
+  margin: 1.25rem !important; }
 
 .margin-t-3 {
-  margin-top: 1rem !important; }
+  margin-top: 1.25rem !important; }
 
 .margin-r-3 {
-  margin-right: 1rem !important; }
+  margin-right: 1.25rem !important; }
 
 .margin-b-3 {
-  margin-bottom: 1rem !important; }
+  margin-bottom: 1.25rem !important; }
 
 .margin-l-3 {
-  margin-left: 1rem !important; }
+  margin-left: 1.25rem !important; }
 
 .margin-4 {
   margin: 1.5rem !important; }
@@ -1163,19 +1242,19 @@ button {
   margin-left: 0.75rem !important; }
 
 .margin-3-xs {
-  margin: 1rem !important; }
+  margin: 1.25rem !important; }
 
 .margin-t-3-xs {
-  margin-top: 1rem !important; }
+  margin-top: 1.25rem !important; }
 
 .margin-r-3-xs {
-  margin-right: 1rem !important; }
+  margin-right: 1.25rem !important; }
 
 .margin-b-3-xs {
-  margin-bottom: 1rem !important; }
+  margin-bottom: 1.25rem !important; }
 
 .margin-l-3-xs {
-  margin-left: 1rem !important; }
+  margin-left: 1.25rem !important; }
 
 .margin-4-xs {
   margin: 1.5rem !important; }
@@ -1244,15 +1323,15 @@ button {
   .margin-l-2-sm {
     margin-left: 0.75rem !important; }
   .margin-3-sm {
-    margin: 1rem !important; }
+    margin: 1.25rem !important; }
   .margin-t-3-sm {
-    margin-top: 1rem !important; }
+    margin-top: 1.25rem !important; }
   .margin-r-3-sm {
-    margin-right: 1rem !important; }
+    margin-right: 1.25rem !important; }
   .margin-b-3-sm {
-    margin-bottom: 1rem !important; }
+    margin-bottom: 1.25rem !important; }
   .margin-l-3-sm {
-    margin-left: 1rem !important; }
+    margin-left: 1.25rem !important; }
   .margin-4-sm {
     margin: 1.5rem !important; }
   .margin-t-4-sm {
@@ -1306,15 +1385,15 @@ button {
   .margin-l-2-md {
     margin-left: 0.75rem !important; }
   .margin-3-md {
-    margin: 1rem !important; }
+    margin: 1.25rem !important; }
   .margin-t-3-md {
-    margin-top: 1rem !important; }
+    margin-top: 1.25rem !important; }
   .margin-r-3-md {
-    margin-right: 1rem !important; }
+    margin-right: 1.25rem !important; }
   .margin-b-3-md {
-    margin-bottom: 1rem !important; }
+    margin-bottom: 1.25rem !important; }
   .margin-l-3-md {
-    margin-left: 1rem !important; }
+    margin-left: 1.25rem !important; }
   .margin-4-md {
     margin: 1.5rem !important; }
   .margin-t-4-md {
@@ -1368,15 +1447,15 @@ button {
   .margin-l-2-lg {
     margin-left: 0.75rem !important; }
   .margin-3-lg {
-    margin: 1rem !important; }
+    margin: 1.25rem !important; }
   .margin-t-3-lg {
-    margin-top: 1rem !important; }
+    margin-top: 1.25rem !important; }
   .margin-r-3-lg {
-    margin-right: 1rem !important; }
+    margin-right: 1.25rem !important; }
   .margin-b-3-lg {
-    margin-bottom: 1rem !important; }
+    margin-bottom: 1.25rem !important; }
   .margin-l-3-lg {
-    margin-left: 1rem !important; }
+    margin-left: 1.25rem !important; }
   .margin-4-lg {
     margin: 1.5rem !important; }
   .margin-t-4-lg {
@@ -1430,15 +1509,15 @@ button {
   .margin-l-2-xl {
     margin-left: 0.75rem !important; }
   .margin-3-xl {
-    margin: 1rem !important; }
+    margin: 1.25rem !important; }
   .margin-t-3-xl {
-    margin-top: 1rem !important; }
+    margin-top: 1.25rem !important; }
   .margin-r-3-xl {
-    margin-right: 1rem !important; }
+    margin-right: 1.25rem !important; }
   .margin-b-3-xl {
-    margin-bottom: 1rem !important; }
+    margin-bottom: 1.25rem !important; }
   .margin-l-3-xl {
-    margin-left: 1rem !important; }
+    margin-left: 1.25rem !important; }
   .margin-4-xl {
     margin: 1.5rem !important; }
   .margin-t-4-xl {
@@ -1985,7 +2064,7 @@ button {
       padding: 3rem; } }
 
 .card {
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
   padding: 1rem;
   background-color: #ffffff;
   border: 1px solid #CBD6DE;
@@ -2000,7 +2079,7 @@ button {
       padding: 2rem; } }
 
 .divide-horizontal {
-  margin: 0 0 1rem 0;
+  margin: 0 0 1.25rem 0;
   width: 100%;
   height: 1px;
   background-color: #9B9B9B;
@@ -2008,7 +2087,7 @@ button {
 
 .btn {
   display: inline-block;
-  margin: 0 1rem 1rem 0;
+  margin: 0 1.25rem 1.25rem 0;
   padding: 0.75rem 1.5rem;
   width: fit-content;
   background-color: #4A4A4A;
@@ -2070,7 +2149,7 @@ button {
 
 .btn-center {
   display: flex;
-  margin: 0 auto 1rem auto; }
+  margin: 0 auto 1.25rem auto; }
 
 .btn-loading {
   position: relative;
@@ -2083,9 +2162,17 @@ button {
     top: 25%;
     left: 45%;
     animation: spin 2s infinite linear; }
+  .btn-loading:focus {
+    color: transparent; }
   .btn-loading.btn-secondary {
     color: transparent; }
     .btn-loading.btn-secondary:before {
       color: #6E41BE; }
   .btn-loading.btn-small:before {
     top: 13%; }
+
+.input-search {
+  background: url(../../assets/images/magnifying-glass.svg) no-repeat scroll 1.4rem 1.4rem;
+  background-position: right 0.75rem top 0.75rem; }
+  .input-search:focus {
+    background-image: url(../../assets/images/magnifying-glass-active.svg); }

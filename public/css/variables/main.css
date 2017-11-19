@@ -15,6 +15,14 @@
   src: url(../../assets/fonts/montserrat/Montserrat-Italic.ttf); }
 
 @font-face {
+  font-family: "Montserrat-Medium";
+  src: url(../../assets/fonts/montserrat/Montserrat-Medium.ttf); }
+
+@font-face {
+  font-family: "Montserrat-MediumItalic";
+  src: url(../../assets/fonts/montserrat/Montserrat-MediumItalic.ttf); }
+
+@font-face {
   font-family: "Montserrat-SemiBold";
   src: url(../../assets/fonts/montserrat/Montserrat-SemiBold.ttf); }
 

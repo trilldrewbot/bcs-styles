@@ -3,6 +3,8 @@ $mont-light: "Montserrat-Light";
 $mont-light-italic: "Montserrat-LightItalic";
 $mont-reg: "Montserrat-Regular";
 $mont-reg-italic: "Montserrat-Italic";
+$mont-med: "Montserrat-Medium";
+$mont-med-italic: "Montserrat-MediumItalic";
 $mont-semi: "Montserrat-SemiBold";
 $mont-semi-italic: "Montserrat-SemiBoldItalic";
 $mont-exbold: "Montserrat-ExtraBold";
@@ -30,6 +32,16 @@ $mont-exbold-italic: "Montserrat-ExtraBoldItalic";
 }
 
 @font-face {
+    font-family: $mont-med;
+    src: url(../../assets/fonts/montserrat/Montserrat-Medium.ttf);
+}
+
+@font-face {
+    font-family: $mont-med-italic;
+    src: url(../../assets/fonts/montserrat/Montserrat-MediumItalic.ttf);
+}
+
+@font-face {
     font-family: $mont-semi;
     src: url(../../assets/fonts/montserrat/Montserrat-SemiBold.ttf);
 }
@@ -54,6 +66,8 @@ $mont-light-stack: $mont-light, helvetica, sans-serif;
 $mont-light-italic-stack: $mont-light-italic, helvetica, sans-serif;
 $mont-reg-stack: $mont-reg, helvetica, sans-serif;
 $mont-reg-italic-stack: $mont-reg-italic, helvetica, sans-serif;
+$mont-med-stack: $mont-med, helvetica, sans-serif;
+$mont-med-italic-stack: $mont-med-italic, helvetica, sans-serif;
 $mont-semi-stack: $mont-semi, helvetica, sans-serif;
 $mont-semi-italic-stack: $mont-semi-italic, helvetica, sans-serif;
 $mont-exbold-stack: $mont-exbold, helvetica, sans-serif;
@@ -64,6 +78,8 @@ $font-light: $mont-light-stack;
 $font-light-italic: $mont-light-italic-stack;
 $font-reg: $mont-reg-stack;
 $font-reg-italic: $mont-reg-italic-stack;
+$font-med: $mont-med-stack;
+$font-med-italic: $mont-med-italic-stack;
 $font-semi: $mont-semi-stack;
 $font-semi-italic: $mont-semi-italic-stack;
 $font-exbold: $mont-exbold-stack;
@@ -72,13 +88,14 @@ $font-exbold-italic: $mont-exbold-italic-stack;
 // Font weights
 $fontweight-light: 300;
 $fontweight-regular: 400;
+$fontweight-med: 500;
 $fontweight-semi-bold: 600;
 $fontweight-extra-bold: 800;
 
 // Text sizes
-$fontsize-xs: 1.2rem;
-$fontsize-sm: 1.4rem;
-$fontsize-base: 1.6rem;
+$fontsize-xs: 1rem;
+$fontsize-sm: 1.2rem;
+$fontsize-base: 1.4rem;
 $fontsize-lg: 1.8rem;
 $fontsize-xl: 2.4rem;
 $fontsize-2xl: 3.0rem;

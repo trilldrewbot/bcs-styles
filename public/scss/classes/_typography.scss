@@ -18,6 +18,10 @@
     color: $success-color;
 }
 
+.link {
+    @include inline-link();
+}
+
 .headline {
     @include headline();
 }

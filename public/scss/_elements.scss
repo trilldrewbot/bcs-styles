@@ -21,7 +21,8 @@ p,
 figcaption,
 ol,
 input,
-textarea, {
+textarea,
+select {
     margin-bottom: $margin-3;
 }
 
@@ -42,6 +43,10 @@ h2 {
 }
 
 h3 {
+    @include headline-three();
+}
+
+h4 {
     @include title();
 }
 
@@ -65,21 +70,32 @@ hr {
     @include divide-horizontal();
 }
 
+label {
+    display: inline-block;
+    margin-bottom: $margin-1;
+    text-transform: uppercase;
+}
+
+input {
+    @include input-text();
+}
+
 input[type="submit"] {
     @include btn();
     @include btn-submit();
 }
 
-input {
-    @include text-input();
+input[type="checkbox"] {
+
 }
 
 textarea {
-    @include text-input();
+    @include input-text();
 }
 
 select {
-    @include text-input();
+    @include input-text();
+    @include select();
 }
 
 option {
