@@ -607,6 +607,12 @@ html {
   .hide-xl {
     display: none; } }
 
+@keyframes spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
 @font-face {
   font-family: "Montserrat-Light";
   src: url(../../assets/fonts/montserrat/Montserrat-Light.ttf); }
@@ -826,6 +832,10 @@ input[type="submit"] {
   color: #ffffff;
   background-color: #4A90E2;
   border: none; }
+  input[type="submit"]:hover {
+    background-color: #383838; }
+  input[type="submit"]:focus {
+    background-color: #9B9B9B; }
   input[type="submit"]:focus {
     box-shadow: none; }
   input[type="submit"]:hover {
@@ -909,8 +919,18 @@ button {
   box-shadow: 2px 2px 4px 0px rgba(155, 155, 155, 0.7);
   transition: all 250ms ease-out;
   cursor: pointer; }
+  button:hover {
+    background-color: #383838; }
+  button:focus {
+    background-color: #9B9B9B; }
   button:focus {
     box-shadow: none; }
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
 
 .base-text {
   font-size: 1.2rem;
@@ -1999,6 +2019,10 @@ button {
   box-shadow: 2px 2px 4px 0px rgba(155, 155, 155, 0.7);
   transition: all 250ms ease-out;
   cursor: pointer; }
+  .btn:hover {
+    background-color: #383838; }
+  .btn:focus {
+    background-color: #9B9B9B; }
   .btn:focus {
     box-shadow: none; }
 
@@ -2018,9 +2042,11 @@ button {
   outline: none;
   cursor: pointer; }
   .btn-secondary:hover {
+    background-color: #ffffff;
     color: #995EFF;
     border: 1px solid #995EFF; }
   .btn-secondary:focus {
+    background-color: #ffffff;
     color: #482A7C;
     border: 1px solid #482A7C; }
 
@@ -2045,3 +2071,21 @@ button {
 .btn-center {
   display: flex;
   margin: 0 auto 1rem auto; }
+
+.btn-loading {
+  position: relative;
+  color: transparent; }
+  .btn-loading:before {
+    content: "\f110";
+    font-family: FontAwesome;
+    color: #ffffff;
+    position: absolute;
+    top: 25%;
+    left: 45%;
+    animation: spin 2s infinite linear; }
+  .btn-loading.btn-secondary {
+    color: transparent; }
+    .btn-loading.btn-secondary:before {
+      color: #6E41BE; }
+  .btn-loading.btn-small:before {
+    top: 13%; }

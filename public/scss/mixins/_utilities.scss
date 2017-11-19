@@ -47,6 +47,12 @@
     box-shadow: 2px 2px 4px 0px rgba(155,155,155,0.7);
     transition: all $animation-duration-standard ease-out;
     cursor: pointer;
+    &:hover {
+        background-color: $grey-dark;
+    }
+    &:focus {
+        background-color: $grey-light;
+    }
     &:focus {
         box-shadow: none;
     }
@@ -71,10 +77,12 @@
     outline: none;
     cursor: pointer;
     &:hover {
+        background-color: $white;
         color: $link-color-hover;
         border: 1px solid $link-color-hover;
     }
     &:focus {
+        background-color: $white;
         color: $link-color-focus;
         border: 1px solid $link-color-focus;
     }
@@ -107,6 +115,32 @@
     margin: 0 auto $margin-3 auto;
 }
 
+@mixin btn-loading {
+    position: relative;
+    color: transparent;
+    &:before {
+        content: "\f110";
+        font-family: FontAwesome;
+        color: $white;
+        position: absolute;
+        top: 25%;
+        left: 45%;
+        animation: spin 2s infinite linear;
+    }
+    &.btn-secondary {
+        color: transparent;
+        &:before {
+            color: $link-color;
+        }
+    }
+    &.btn-small {
+        &:before {
+            top: 13%;
+        }
+    }
+}
+
+// Imputs
 @mixin image-overlay($url, $color: $slate-dark, $percent: "85%") {
     background: $color url($url) 0 0 no-repeat fixed;
     height: 100%;

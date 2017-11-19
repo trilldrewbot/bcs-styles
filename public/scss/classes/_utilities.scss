@@ -182,3 +182,8 @@ $padding-numbers: $padding-1, $padding-2, $padding-3, $padding-4, $padding-5, $p
 .btn-center {
     @include btn-center();
 }
+
+// Inputs
+.btn-loading {
+    @include btn-loading();
+}
