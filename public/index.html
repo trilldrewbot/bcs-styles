@@ -69,39 +69,51 @@
         <div class="col card">
           <h2>Form Fields</h2>
           <h3>Inputs</h3>
-          <label for="text-input">Text Label</label>
-          <input type="text" name="text-input" value="" placeholder="Text goes here" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Text goes here'">
-          <label for="password-input">Password Label</label>
-          <input type="password" name="password-input" value="" placeholder="Password Input" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Password Input'">
-          <label for="search-input">Search Label</label>
-          <input type="search" name="search-input" value="" placeholder="Search..." onfocus="this.placeholder = ''" onblur="this.placeholder = 'Search...'" class="input-search">
-          <h3>Textareas</h3>
-          <label for="textarea">Textarea Label</label>
-          <textarea name="textarea" rows="8" cols="80" placeholder="Text Area" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Text Area'"></textarea>
-          <h3>Selects</h3>
-          <select class="" name="">
-            <option value="">Option 1</option>
-            <option value="">Option 2</option>
-            <option value="">Option 3</option>
-          </select>
+          <div class="row">
+            <div class="col-md-6">
+              <label for="text-input">Text Label</label>
+              <input type="text" name="text-input" value="" placeholder="Text goes here" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Text goes here'">
+              <label for="password-input">Password Label</label>
+              <input type="password" name="password-input" value="" placeholder="Password Input" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Password Input'">
+              <label for="search-input">Search Label</label>
+              <input type="search" name="search-input" value="" placeholder="Search..." onfocus="this.placeholder = ''" onblur="this.placeholder = 'Search...'" class="input-search">
+              <label for="disabled-input">Input Disabled</label>
+              <input type="text" name="disabled-input" value="" placeholder="Input disabled" disabled class="input-disabled">
+              <label for="loading-input">Input Loading</label>
+              <input type="text" name="loading-input" value="" placeholder="Text goes here" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Text goes here'" class="input-loading">
+              <h3>Textareas</h3>
+              <label for="textarea">Textarea Label</label>
+              <textarea name="textarea" rows="8" cols="80" placeholder="Text Area" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Text Area'"></textarea>
+              <h3>Selects</h3>
+              <select class="" name="">
+                <option value="">Option 1</option>
+                <option value="">Option 2</option>
+                <option value="">Option 3</option>
+              </select>
+            </div>
+          </div>
           <h3>Checkboxes</h3>
-          <label for="check-one" id="check-one">
-            <input type="checkbox" name="check-one" value="">
-            Check One
-          </label>
-          <label for="check-two" id="check-two">
-            <input type="checkbox" name="check-two" value="">
-            Check Two
-          </label>
+          <fieldset>
+            <label for="check-one" id="check-one">
+              <input type="checkbox" name="check-one" value="">
+              Check One
+            </label>
+            <label for="check-two" id="check-two">
+              <input type="checkbox" name="check-two" value="">
+              Check Two
+            </label>
+          </fieldset>
           <h3>Radios</h3>
-          <label for="radio-one">
-            <input type="radio" name="radio-group" id="radio-one" value="">
-            Radio One
-          </label>
-          <label for="radio-two">
-            <input type="radio" name="radio-group" id="radio-two" value="">
-            Radio Two
-          </label>
+          <fieldset>
+            <label for="radio-one">
+              <input type="radio" name="radio-group" id="radio-one" value="">
+              Radio One
+            </label>
+            <label for="radio-two">
+              <input type="radio" name="radio-group" id="radio-two" value="">
+              Radio Two
+            </label>
+          </fieldset>
         </div>
       </div>
     </section>

@@ -841,6 +841,9 @@ hr {
   background-color: #9B9B9B;
   border: none; }
 
+fieldset {
+  margin-bottom: 1.25rem; }
+
 label {
   display: block;
   margin-bottom: 0.5rem;
@@ -885,7 +888,7 @@ input[type="submit"] {
   border: none;
   border-radius: 6px;
   outline: none;
-  box-shadow: 2px 2px 4px 0px rgba(155, 155, 155, 0.7);
+  box-shadow: 2px 2px 3px 0px rgba(155, 155, 155, 0.6);
   transition: all 250ms ease-out;
   cursor: pointer;
   font-family: "Montserrat-SemiBold", helvetica, sans-serif;
@@ -908,6 +911,7 @@ input[type="submit"] {
     color: #ffffff; }
 
 input[type="checkbox"] {
+  cursor: pointer;
   margin: 0 0.5rem 0 0;
   width: 1.5rem;
   height: 1.5rem; }
@@ -971,6 +975,7 @@ select {
   background-color: #ffffff;
   color: #9B9B9B;
   transition: all 250ms ease-out;
+  cursor: pointer;
   background: url(../../assets/images/chevron-down.svg) no-repeat scroll 1.4rem 1.4rem;
   background-position: right 0.75rem top 1rem; }
   select::placeholder {
@@ -1003,7 +1008,7 @@ button {
   border: none;
   border-radius: 6px;
   outline: none;
-  box-shadow: 2px 2px 4px 0px rgba(155, 155, 155, 0.7);
+  box-shadow: 2px 2px 3px 0px rgba(155, 155, 155, 0.6);
   transition: all 250ms ease-out;
   cursor: pointer; }
   button:hover {
@@ -2089,7 +2094,8 @@ button {
   padding: 1rem;
   background-color: #ffffff;
   border: 1px solid #CBD6DE;
-  border-radius: 6px; }
+  border-radius: 6px;
+  box-shadow: 1px 1px 2px 0px rgba(155, 155, 155, 0.3); }
   @media only screen and (min-width: 641px) {
     .card {
       margin-bottom: 1.5rem;
@@ -2116,7 +2122,7 @@ button {
   border: none;
   border-radius: 6px;
   outline: none;
-  box-shadow: 2px 2px 4px 0px rgba(155, 155, 155, 0.7);
+  box-shadow: 2px 2px 3px 0px rgba(155, 155, 155, 0.6);
   transition: all 250ms ease-out;
   cursor: pointer; }
   .btn:hover {
@@ -2197,3 +2203,27 @@ button {
   background-position: right 0.75rem top 0.75rem; }
   .input-search:focus {
     background-image: url(../../assets/images/magnifying-glass-active.svg); }
+
+.input-loading {
+  color: #CCCCCC;
+  border: 1px solid #CCCCCC;
+  cursor: default;
+  background: url(../../assets/images/spinner.svg) no-repeat scroll 1.4rem 1.4rem;
+  background-position: left 0.75rem top 0.75rem; }
+  .input-loading:focus {
+    border-color: #CCCCCC;
+    color: #CCCCCC; }
+  .input-loading::placeholder {
+    color: #CCCCCC; }
+  .input-loading::placeholder {
+    color: transparent; }
+
+.input-disabled {
+  color: #CCCCCC;
+  border: 1px solid #CCCCCC;
+  cursor: default; }
+  .input-disabled:focus {
+    border-color: #CCCCCC;
+    color: #CCCCCC; }
+  .input-disabled::placeholder {
+    color: #CCCCCC; }

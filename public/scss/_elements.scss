@@ -70,6 +70,10 @@ hr {
     @include divide-horizontal();
 }
 
+fieldset {
+    margin-bottom: $margin-3;
+}
+
 label {
     display: block;
     margin-bottom: $margin-1;

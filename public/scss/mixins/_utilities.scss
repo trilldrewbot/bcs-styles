@@ -16,6 +16,7 @@
     background-color: $white;
     border: 1px solid $slate;
     border-radius: $primary-radius;
+    box-shadow: 1px 1px 2px 0px rgba(155,155,155,0.3);
     @media #{$breakpoint-sm-up} {
         margin-bottom: $margin-4;
         padding: $padding-4;
@@ -44,7 +45,7 @@
     border: none;
     border-radius: $primary-radius;
     outline: none;
-    box-shadow: 2px 2px 4px 0px rgba(155,155,155,0.7);
+    box-shadow: 2px 2px 3px 0px rgba(155,155,155,0.6);
     transition: all $animation-duration-standard ease-out;
     cursor: pointer;
     &:hover {
@@ -166,7 +167,7 @@
     padding: $padding-1 $padding-2;
     width: 100%;
     outline: none;
-    border: 1px solid $secondary-text-color;
+    border: 1px solid $grey-light;
     border-radius: $secondary-radius;
     background-color: $white;
     color: $secondary-text-color;
@@ -197,7 +198,30 @@
     }
 }
 
+@mixin input-disabled() {
+    color: $grey-extra-light;
+    border: 1px solid $grey-extra-light;
+    cursor: default;
+    &:focus {
+        border-color: $grey-extra-light;
+        color: $grey-extra-light;
+    }
+    &::placeholder {
+        color: $grey-extra-light;
+    }
+}
+
+@mixin input-loading() {
+    @include input-disabled();
+    background: url(../../assets/images/spinner.svg) no-repeat scroll $fontsize-base $fontsize-base;
+    background-position: left $padding-2 top $padding-2;
+    &::placeholder {
+        color: transparent;
+    }
+}
+
 @mixin select() {
+    cursor: pointer;
     background: url(../../assets/images/chevron-down.svg) no-repeat scroll $fontsize-base $fontsize-base;
     background-position: right $padding-2 top $padding-3;
     &:focus {
@@ -206,6 +230,7 @@
 }
 
 @mixin checkbox() {
+    cursor: pointer;
     margin: 0 $margin-1 0 0;
     width: $padding-4;
     height: $padding-4;

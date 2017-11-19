@@ -4,7 +4,7 @@
     <title>check</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
-    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
         <polyline id="check" stroke="#FFFFFF" stroke-width="2" transform="translate(5.282385, 7.349584) rotate(19.000000) translate(-5.282385, -7.349584) " points="1.98065005 9.78738124 6.17904611 13.9857773 8.58411926 0.713390369"></polyline>
     </g>
 </svg>

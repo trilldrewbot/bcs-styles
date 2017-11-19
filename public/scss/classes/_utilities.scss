@@ -191,3 +191,11 @@ $padding-numbers: $padding-1, $padding-2, $padding-3, $padding-4, $padding-5, $p
 .input-search {
     @include input-search();
 }
+
+.input-loading {
+    @include input-loading();
+}
+
+.input-disabled {
+    @include input-disabled();
+}
