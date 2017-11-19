@@ -63,15 +63,14 @@
           <button class="btn btn-submit btn-center">Submit Centered</button>
         </div>
       </div>
-      <button class="btn btn-secondary btn-center margin-b-3 margin-b-4-sm margin-b-5-md">Centered Secondary Button (Outside)</button>
       <div class="row">
         <div class="col card">
           <h2>Form Fields</h2>
           <h3>Inputs</h3>
-          <input type="text" name="" value="" placeholder="Text Input">
-          <input type="password" name="" value="" placeholder="Password Input">
+          <input type="text" name="" value="" placeholder="Text Input" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Text Input'">
+          <input type="password" name="" value="" placeholder="Password Input" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Password Input'">
           <h3>Textareas</h3>
-          <textarea name="name" rows="8" cols="80" placeholder="Text Area"></textarea>
+          <textarea name="name" rows="8" cols="80" placeholder="Text Area" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Text Area'"></textarea>
           <h3>Selects</h3>
           <select class="" name="">
             <option value="">Option 1</option>

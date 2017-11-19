@@ -70,6 +70,22 @@ input[type="submit"] {
     @include btn-submit();
 }
 
+input {
+    @include text-input();
+}
+
+textarea {
+    @include text-input();
+}
+
+select {
+    @include text-input();
+}
+
+option {
+    padding: $padding-2;
+}
+
 button {
     @include btn();
 }

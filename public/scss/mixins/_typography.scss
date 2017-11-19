@@ -55,7 +55,6 @@
     font-size: $fontsize-sm;
     color: $color;
     line-height: $line-height;
-    text-transform: uppercase;
     @media #{$breakpoint-sm-up} {
         font-size: $fontsize-base;
     }

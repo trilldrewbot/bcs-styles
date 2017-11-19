@@ -131,6 +131,19 @@ $padding-numbers: $padding-1, $padding-2, $padding-3, $padding-4, $padding-5, $p
   }
 }
 
+// Border radiuses
+.radius-1 {
+    border-radius: $primary-radius;
+}
+
+.radius-2 {
+    border-radius: $secondary-radius;
+}
+
+.rounded {
+    border-radius: $rounded;
+}
+
 // Containers
 .section {
     @include section()
