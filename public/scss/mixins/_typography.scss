@@ -115,6 +115,7 @@
         counter-increment: counter;
         position: absolute;
         left: -$margin-6;
+        padding-top: 2px;
         width: 1.8em;
         height: 1.8em;
         background-color: $primary-text-color;
@@ -122,6 +123,12 @@
         font-size: $fontsize-xs;
         text-align: center;
         color: $white;
+        @media #{$breakpoint-sm-up} {
+            padding-top: 0;
+        }
+        @media #{$breakpoint-lg-up} {
+            font-size: $fontsize-sm;
+        }
       }
     }
 }

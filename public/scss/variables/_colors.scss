@@ -22,7 +22,9 @@ $green: #417505;
 $green-dark: #1C3A13;
 $green-light: #579E06;
 $green-light-trans: rgba(87, 158, 6, 0.15);
-$golden-yellow: #F5A623;
+$yellow: #F5A623;
+$yellow-light: #F4AD3A;
+$yellow-light-trans: rgba(244, 173, 58, 0.15);
 
 $primary-color: $slate-dark;
 $secondary-color: $slate-light;
@@ -33,5 +35,6 @@ $link-color-focus: $purple-dark;
 
 $error-color: $red-light;
 $success-color: $green-light;
+$warn-color: $yellow;
 
 $image-overlay: $slate-dark-translucent;

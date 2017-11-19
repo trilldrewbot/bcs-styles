@@ -216,3 +216,7 @@ $padding-numbers: $padding-1, $padding-2, $padding-3, $padding-4, $padding-5, $p
 .context-success {
     @include context-success();
 }
+
+.context-warn {
+    @include context-warn();
+}

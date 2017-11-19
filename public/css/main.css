@@ -815,6 +815,7 @@ ol {
       counter-increment: counter;
       position: absolute;
       left: -3rem;
+      padding-top: 2px;
       width: 1.8em;
       height: 1.8em;
       background-color: #4A4A4A;
@@ -822,6 +823,12 @@ ol {
       font-size: 1rem;
       text-align: center;
       color: #ffffff; }
+      @media only screen and (min-width: 641px) {
+        ol > li:before {
+          padding-top: 0; } }
+      @media only screen and (min-width: 1441px) {
+        ol > li:before {
+          font-size: 1.2rem; } }
 
 section {
   padding: 1.5rem;
@@ -1139,6 +1146,7 @@ button {
       counter-increment: counter;
       position: absolute;
       left: -3rem;
+      padding-top: 2px;
       width: 1.8em;
       height: 1.8em;
       background-color: #4A4A4A;
@@ -1146,6 +1154,12 @@ button {
       font-size: 1rem;
       text-align: center;
       color: #ffffff; }
+      @media only screen and (min-width: 641px) {
+        .ordered > li:before {
+          padding-top: 0; } }
+      @media only screen and (min-width: 1441px) {
+        .ordered > li:before {
+          font-size: 1.2rem; } }
 
 .margin-1 {
   margin: 0.5rem !important; }
@@ -2249,8 +2263,13 @@ button {
 .context-error {
   padding: 1rem;
   background-color: rgba(234, 98, 114, 0.15);
+  text-align: center;
   color: #EA6272;
   border: 1px solid #EA6272; }
+  .context-error:before {
+    content: "\f06a";
+    font-family: FontAwesome;
+    margin-right: 0.75rem; }
   @media only screen and (min-width: 1025px) {
     .context-error {
       padding: 1.5rem; } }
@@ -2258,8 +2277,27 @@ button {
 .context-success {
   padding: 1rem;
   background-color: rgba(87, 158, 6, 0.15);
+  text-align: center;
   color: #579E06;
   border: 1px solid #579E06; }
+  .context-success:before {
+    content: "\f00c";
+    font-family: FontAwesome;
+    margin-right: 0.75rem; }
   @media only screen and (min-width: 1025px) {
     .context-success {
+      padding: 1.5rem; } }
+
+.context-warn {
+  padding: 1rem;
+  background-color: rgba(244, 173, 58, 0.15);
+  text-align: center;
+  color: #F5A623;
+  border: 1px solid #F5A623; }
+  .context-warn:before {
+    content: "\f071";
+    font-family: FontAwesome;
+    margin-right: 0.75rem; }
+  @media only screen and (min-width: 1025px) {
+    .context-warn {
       padding: 1.5rem; } }

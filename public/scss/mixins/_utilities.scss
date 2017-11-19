@@ -282,8 +282,14 @@
 @mixin context-error() {
     padding: $padding-3;
     background-color: $red-light-trans;
+    text-align: center;
     color: $error-text-color;
     border: 1px solid $error-text-color;
+    &:before {
+        content: "\f06a";
+        font-family: FontAwesome;
+        margin-right: $margin-2;
+    }
     @media #{$breakpoint-md-up} {
         padding: $padding-4;
     }
@@ -292,8 +298,30 @@
 @mixin context-success() {
     padding: $padding-3;
     background-color: $green-light-trans;
+    text-align: center;
     color: $success-text-color;
     border: 1px solid $success-text-color;
+    &:before {
+        content: "\f00c";
+        font-family: FontAwesome;
+        margin-right: $margin-2;
+    }
+    @media #{$breakpoint-md-up} {
+        padding: $padding-4;
+    }
+}
+
+@mixin context-warn() {
+    padding: $padding-3;
+    background-color: $yellow-light-trans;
+    text-align: center;
+    color: $warn-text-color;
+    border: 1px solid $warn-text-color;
+    &:before {
+        content: "\f071";
+        font-family: FontAwesome;
+        margin-right: $margin-2;
+    }
     @media #{$breakpoint-md-up} {
         padding: $padding-4;
     }

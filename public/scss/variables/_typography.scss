@@ -106,5 +106,6 @@ $line-height: 1.6em;
 // Text colors:
 $primary-text-color: $grey;
 $secondary-text-color: $grey-light;
-$error-text-color: $red-light;
-$success-text-color: $green-light;
+$error-text-color: $error-color;
+$success-text-color: $success-color;
+$warn-text-color: $warn-color;
