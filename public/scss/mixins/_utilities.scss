@@ -204,3 +204,28 @@
         background-image: url(../../assets/images/chevron-down-active.svg);
     }
 }
+
+@mixin checkbox() {
+    margin: 0 $margin-1 0 0;
+    width: $padding-4;
+    height: $padding-4;
+    &:checked {
+        background: url(../../assets/images/check.svg) no-repeat scroll $fontsize-base $fontsize-base;
+        background-position: right .35rem top .2rem;
+        background-color: $blue;
+        border-color: $blue;
+    }
+}
+
+@mixin radio() {
+    margin: 0 $margin-1 0 0;
+    width: $padding-4;
+    height: $padding-4;
+    border-radius: $rounded;
+    &:checked {
+        background: url(../../assets/images/radio.svg) no-repeat scroll $fontsize-base $fontsize-base;
+        background-position: right .45rem top .4rem;
+        background-color: $blue;
+        border-color: $blue;
+    }
+}

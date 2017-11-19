@@ -71,7 +71,7 @@ hr {
 }
 
 label {
-    display: inline-block;
+    display: block;
     margin-bottom: $margin-1;
     text-transform: uppercase;
 }
@@ -86,7 +86,11 @@ input[type="submit"] {
 }
 
 input[type="checkbox"] {
+    @include checkbox();
+}
 
+input[type="radio"] {
+    @include radio();
 }
 
 textarea {

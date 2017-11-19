@@ -842,7 +842,7 @@ hr {
   border: none; }
 
 label {
-  display: inline-block;
+  display: block;
   margin-bottom: 0.5rem;
   text-transform: uppercase; }
 
@@ -906,6 +906,27 @@ input[type="submit"] {
     background-color: #306EB5;
     border: none;
     color: #ffffff; }
+
+input[type="checkbox"] {
+  margin: 0 0.5rem 0 0;
+  width: 1.5rem;
+  height: 1.5rem; }
+  input[type="checkbox"]:checked {
+    background: url(../../assets/images/check.svg) no-repeat scroll 1.4rem 1.4rem;
+    background-position: right .35rem top .2rem;
+    background-color: #4A90E2;
+    border-color: #4A90E2; }
+
+input[type="radio"] {
+  margin: 0 0.5rem 0 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 100%; }
+  input[type="radio"]:checked {
+    background: url(../../assets/images/radio.svg) no-repeat scroll 1.4rem 1.4rem;
+    background-position: right .45rem top .4rem;
+    background-color: #4A90E2;
+    border-color: #4A90E2; }
 
 textarea {
   -webkit-appearance: none;
