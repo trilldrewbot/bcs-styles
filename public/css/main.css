@@ -1044,10 +1044,10 @@ button {
   font-family: "Montserrat-Italic", helvetica, sans-serif; }
 
 .error {
-  color: #D0021B; }
+  color: #EA6272; }
 
 .success {
-  color: #417505; }
+  color: #579E06; }
 
 .link {
   color: #6E41BE;
@@ -2206,7 +2206,7 @@ button {
 
 .input-loading {
   color: #CCCCCC;
-  border: 1px solid #CCCCCC;
+  border-color: #CCCCCC;
   cursor: default;
   background: url(../../assets/images/spinner.svg) no-repeat scroll 1.4rem 1.4rem;
   background-position: left 0.75rem top 0.75rem; }
@@ -2220,10 +2220,46 @@ button {
 
 .input-disabled {
   color: #CCCCCC;
-  border: 1px solid #CCCCCC;
+  border-color: #CCCCCC;
   cursor: default; }
   .input-disabled:focus {
     border-color: #CCCCCC;
     color: #CCCCCC; }
   .input-disabled::placeholder {
     color: #CCCCCC; }
+
+.input-error {
+  background-color: rgba(234, 98, 114, 0.15);
+  border-color: #EA6272;
+  color: #EA6272; }
+  .input-error::placeholder {
+    color: #EA6272; }
+  .input-error:focus {
+    background-color: #ffffff; }
+
+.input-success {
+  background-color: rgba(87, 158, 6, 0.15);
+  border-color: #579E06;
+  color: #579E06; }
+  .input-success::placeholder {
+    color: #579E06; }
+  .input-success:focus {
+    background-color: #ffffff; }
+
+.context-error {
+  padding: 1rem;
+  background-color: rgba(234, 98, 114, 0.15);
+  color: #EA6272;
+  border: 1px solid #EA6272; }
+  @media only screen and (min-width: 1025px) {
+    .context-error {
+      padding: 1.5rem; } }
+
+.context-success {
+  padding: 1rem;
+  background-color: rgba(87, 158, 6, 0.15);
+  color: #579E06;
+  border: 1px solid #579E06; }
+  @media only screen and (min-width: 1025px) {
+    .context-success {
+      padding: 1.5rem; } }

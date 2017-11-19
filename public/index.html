@@ -80,7 +80,11 @@
               <label for="disabled-input">Input Disabled</label>
               <input type="text" name="disabled-input" value="" placeholder="Input disabled" disabled class="input-disabled">
               <label for="loading-input">Input Loading</label>
-              <input type="text" name="loading-input" value="" placeholder="Text goes here" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Text goes here'" class="input-loading">
+              <input type="text" name="loading-input" value="" class="input-loading" disabled>
+              <label for="error-input">Error on input</label>
+              <input type="text" name="error-input" value="" placeholder="Text goes here" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Text goes here'" class="input-error">
+              <label for="success-input">Successful input</label>
+              <input type="text" name="success-input" value="" placeholder="Text goes here" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Text goes here'" class="input-success">
               <h3>Textareas</h3>
               <label for="textarea">Textarea Label</label>
               <textarea name="textarea" rows="8" cols="80" placeholder="Text Area" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Text Area'"></textarea>
@@ -114,6 +118,9 @@
               Radio Two
             </label>
           </fieldset>
+          <h3>Contextual Messages</h3>
+          <p class="context-error">There doesn’t seem to be an account associated with the email: <strong>your@email.com</strong></p>
+          <p class="context-success">Success! We’ve sent instructions on resetting your password to <strong>your@email.com</strong></p>
         </div>
       </div>
     </section>

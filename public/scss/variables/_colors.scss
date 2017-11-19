@@ -16,12 +16,13 @@ $blue-dark: #306EB5;
 $blue-light: #54A3FF;
 $red: #D0021B;
 $red-dark: #9E0113;
-$red-light: #EA021D;
+$red-light: #EA6272;
+$red-light-trans: rgba(234, 98, 114, 0.15);
 $green: #417505;
 $green-dark: #1C3A13;
 $green-light: #579E06;
+$green-light-trans: rgba(87, 158, 6, 0.15);
 $golden-yellow: #F5A623;
-
 
 $primary-color: $slate-dark;
 $secondary-color: $slate-light;
@@ -30,7 +31,7 @@ $link-color: $purple;
 $link-color-hover: $purple-light;
 $link-color-focus: $purple-dark;
 
-$error-color: $red;
-$success-color: $green;
+$error-color: $red-light;
+$success-color: $green-light;
 
 $image-overlay: $slate-dark-translucent;

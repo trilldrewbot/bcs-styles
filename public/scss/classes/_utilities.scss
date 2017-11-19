@@ -199,3 +199,20 @@ $padding-numbers: $padding-1, $padding-2, $padding-3, $padding-4, $padding-5, $p
 .input-disabled {
     @include input-disabled();
 }
+
+.input-error {
+    @include input-error();
+}
+
+.input-success {
+    @include input-success();
+}
+
+// Contextual messages
+.context-error {
+    @include context-error();
+}
+
+.context-success {
+    @include context-success();
+}

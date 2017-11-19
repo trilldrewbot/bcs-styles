@@ -200,7 +200,7 @@
 
 @mixin input-disabled() {
     color: $grey-extra-light;
-    border: 1px solid $grey-extra-light;
+    border-color: $grey-extra-light;
     cursor: default;
     &:focus {
         border-color: $grey-extra-light;
@@ -217,6 +217,30 @@
     background-position: left $padding-2 top $padding-2;
     &::placeholder {
         color: transparent;
+    }
+}
+
+@mixin input-error() {
+    background-color: $red-light-trans;
+    border-color: $error-text-color;
+    color: $error-text-color;
+    &::placeholder {
+        color: $error-text-color;
+    }
+    &:focus {
+        background-color: $white;
+    }
+}
+
+@mixin input-success() {
+    background-color: $green-light-trans;
+    border-color: $success-text-color;
+    color: $success-text-color;
+    &::placeholder {
+        color: $success-text-color;
+    }
+    &:focus {
+        background-color: $white;
     }
 }
 
@@ -252,5 +276,25 @@
         background-position: right .45rem top .4rem;
         background-color: $blue;
         border-color: $blue;
+    }
+}
+
+@mixin context-error() {
+    padding: $padding-3;
+    background-color: $red-light-trans;
+    color: $error-text-color;
+    border: 1px solid $error-text-color;
+    @media #{$breakpoint-md-up} {
+        padding: $padding-4;
+    }
+}
+
+@mixin context-success() {
+    padding: $padding-3;
+    background-color: $green-light-trans;
+    color: $success-text-color;
+    border: 1px solid $success-text-color;
+    @media #{$breakpoint-md-up} {
+        padding: $padding-4;
     }
 }
