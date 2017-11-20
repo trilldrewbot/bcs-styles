@@ -5,8 +5,8 @@
   flex: 0 1 auto;
   flex-direction: row;
   flex-wrap: wrap;
-  // Overrides flexbox's default behavior of making all children equal height
-  align-items: flex-start; // If this was not in place it would require two classes to make a row full of unequal height columns aligned top, middle, bottom
+  // // Overrides flexbox's default behavior of making all children equal height
+  // align-items: flex-start; // If this was not in place it would require two classes to make a row full of unequal height columns aligned top, middle, bottom
   @if type-of($content-well-max-width) == number and $content-well-max-width != 0 {
     max-width: $content-well-max-width;
   }

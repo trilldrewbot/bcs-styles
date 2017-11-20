@@ -1,13 +1,23 @@
 body {
     -webkit-font-smoothing: antialiased;
-    font: 10px $font-reg;
+    font-family: $font-reg;
+    font-size: 10px;
     color: $primary-text-color;
+}
+
+header {
+    @include header();
+}
+
+section {
+    @include section();
 }
 
 p,
 li,
 span,
 button,
+label,
 input,
 textarea,
 figcaption,
@@ -50,7 +60,11 @@ h4 {
     @include title();
 }
 
-p a, li a {
+a {
+    text-decoration: none;
+}
+
+p a {
     @include inline-link();
 }
 
@@ -60,10 +74,6 @@ p span {
 
 ol {
     @include ordered();
-}
-
-section {
-    @include section();
 }
 
 hr {

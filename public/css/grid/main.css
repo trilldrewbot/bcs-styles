@@ -5,8 +5,7 @@
   flex: 0 1 auto;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: flex-start;
-  max-width: 2400px; }
+  max-width: 996px; }
 
 .row.reverse {
   flex-direction: row-reverse; }
@@ -30,6 +29,21 @@
 
 .last {
   order: 1; }
+
+.align-start {
+  align-self: flex-start; }
+
+.align-end {
+  align-self: flex-end; }
+
+.align-center {
+  align-self: center; }
+
+.align-baseline {
+  align-self: baseline; }
+
+.align-stretch {
+  align-self: stretch; }
 
 .col-xs {
   flex-grow: 1;

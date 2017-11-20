@@ -1,3 +1,33 @@
+@mixin header {
+    position: relative;
+    height: 6rem;
+    @include row();
+    .header-content-well {
+        @include col();
+    }
+    .header-logo {
+        position: absolute;
+        top: 0;
+        left: $padding-4;
+    }
+    .header-nav {
+        display: flex;
+        ul {
+            margin-left: auto;
+            padding-top: $padding-3;
+            li {
+                text-align: center;
+                padding: 0 $padding-3;
+                display: inline-block;
+                border-right: 1px solid $primary-text-color;
+                &:last-of-type {
+                    border-right: none;
+                }
+            }
+        }
+    }
+}
+
 @mixin section() {
     padding: $padding-4;
     display: block;
@@ -25,6 +55,10 @@
         margin-bottom: $margin-5;
         padding: $padding-5;
     }
+}
+
+@mixin card-title {
+
 }
 
 @mixin divide-horizontal() {
