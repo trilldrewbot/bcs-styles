@@ -1,3 +1,11 @@
+@mixin position-absolute-center() {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+
 @mixin header {
     position: relative;
     height: 6rem;
@@ -19,7 +27,7 @@
                 text-align: center;
                 padding: 0 $padding-3;
                 display: inline-block;
-                border-right: 1px solid $primary-text-color;
+                border-right: $divider;
                 &:last-of-type {
                     border-right: none;
                 }
@@ -44,7 +52,7 @@
     margin-bottom: $margin-3;
     padding: $padding-3;
     background-color: $white;
-    border: 1px solid $slate;
+    border: $divider;
     border-radius: $primary-radius;
     box-shadow: 1px 1px 2px 0px rgba(155,155,155,0.3);
     @media #{$breakpoint-sm-up} {
@@ -61,11 +69,20 @@
 
 }
 
+@mixin card-title-code {
+    &:before {
+        content: "\f121";
+        font-family: FontAwesome;
+        color: $white;
+        @include position-absolute-center();
+    }
+}
+
 @mixin divide-horizontal() {
     margin: 0 0 $margin-3 0;
     width: 100%;
     height: 1px;
-    background-color: $grey-light;
+    background-color: $divider-color;
     border: none;
 }
 
@@ -157,9 +174,7 @@
         content: "\f110";
         font-family: FontAwesome;
         color: $white;
-        position: absolute;
-        top: 25%;
-        left: 45%;
+        @include position-absolute-center();
         animation: spin 2s infinite linear;
     }
     &:focus {

@@ -145,6 +145,10 @@ $padding-numbers: $padding-1, $padding-2, $padding-3, $padding-4, $padding-5, $p
 }
 
 // Containers
+.header {
+    @include header();
+}
+
 .section {
     @include section()
 }
@@ -153,7 +157,27 @@ $padding-numbers: $padding-1, $padding-2, $padding-3, $padding-4, $padding-5, $p
     @include card();
 }
 
+.fill {
+    width: 100%;
+}
+
 // Dividers
+.border-top {
+    border-top: $divider;
+}
+
+.border-right {
+    border-right: $divider;
+}
+
+.border-bottom {
+    border-bottom: $divider;
+}
+
+.border-left {
+    border-left: $divider;
+}
+
 .divide-horizontal {
     @include divide-horizontal();
 }
