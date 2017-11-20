@@ -725,18 +725,18 @@ h1 {
   margin-bottom: 1.25rem;
   display: block;
   font-family: "Montserrat-ExtraBold", helvetica, sans-serif;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   color: "inherit";
   line-height: 1.6em; }
   @media only screen and (min-width: 641px) {
     h1 {
-      font-size: 2.4rem; } }
+      font-size: 2.2rem; } }
   @media only screen and (min-width: 1025px) {
     h1 {
-      font-size: 2.4rem; } }
+      font-size: 2.2rem; } }
   @media only screen and (min-width: 1441px) {
     h1 {
-      font-size: 3rem; } }
+      font-size: 2.6rem; } }
 
 h2 {
   margin-bottom: 1.25rem;
@@ -747,13 +747,13 @@ h2 {
   line-height: 1.6em; }
   @media only screen and (min-width: 641px) {
     h2 {
-      font-size: 1.8rem; } }
+      font-size: 1.6rem; } }
   @media only screen and (min-width: 1025px) {
     h2 {
-      font-size: 1.8rem; } }
+      font-size: 1.6rem; } }
   @media only screen and (min-width: 1441px) {
     h2 {
-      font-size: 2.4rem; } }
+      font-size: 2.2rem; } }
 
 h3 {
   margin-bottom: 1.25rem;
@@ -770,7 +770,7 @@ h3 {
       font-size: 1.4rem; } }
   @media only screen and (min-width: 1441px) {
     h3 {
-      font-size: 1.8rem; } }
+      font-size: 1.6rem; } }
 
 h4 {
   margin-bottom: 1.25rem;
@@ -821,6 +821,7 @@ ol {
       background-color: #4A4A4A;
       border-radius: 100%;
       font-size: 1rem;
+      font-family: "Montserrat-ExtraBold", helvetica, sans-serif;
       text-align: center;
       color: #ffffff; }
       @media only screen and (min-width: 641px) {
@@ -1072,18 +1073,18 @@ button {
   margin-bottom: 1.25rem;
   display: block;
   font-family: "Montserrat-ExtraBold", helvetica, sans-serif;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   color: "inherit";
   line-height: 1.6em; }
   @media only screen and (min-width: 641px) {
     .headline {
-      font-size: 2.4rem; } }
+      font-size: 2.2rem; } }
   @media only screen and (min-width: 1025px) {
     .headline {
-      font-size: 2.4rem; } }
+      font-size: 2.2rem; } }
   @media only screen and (min-width: 1441px) {
     .headline {
-      font-size: 3rem; } }
+      font-size: 2.6rem; } }
 
 .headline-two {
   margin-bottom: 1.25rem;
@@ -1094,13 +1095,13 @@ button {
   line-height: 1.6em; }
   @media only screen and (min-width: 641px) {
     .headline-two {
-      font-size: 1.8rem; } }
+      font-size: 1.6rem; } }
   @media only screen and (min-width: 1025px) {
     .headline-two {
-      font-size: 1.8rem; } }
+      font-size: 1.6rem; } }
   @media only screen and (min-width: 1441px) {
     .headline-two {
-      font-size: 2.4rem; } }
+      font-size: 2.2rem; } }
 
 .title {
   margin-bottom: 1.25rem;
@@ -1152,6 +1153,7 @@ button {
       background-color: #4A4A4A;
       border-radius: 100%;
       font-size: 1rem;
+      font-family: "Montserrat-ExtraBold", helvetica, sans-serif;
       text-align: center;
       color: #ffffff; }
       @media only screen and (min-width: 641px) {

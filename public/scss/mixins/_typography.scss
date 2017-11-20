@@ -121,6 +121,7 @@
         background-color: $primary-text-color;
         border-radius: $rounded;
         font-size: $fontsize-xs;
+        font-family: $font-exbold;
         text-align: center;
         color: $white;
         @media #{$breakpoint-sm-up} {
